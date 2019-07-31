@@ -14,9 +14,9 @@ df = pd.read_csv('Best_Books_Ever.csv')
 url = 'https://www.goodreads.com'
 
 # Change accordingly for each scrape iteration
-number = '2' 
-start = 3000
-end = 5000
+number = '_test' 
+start = 0
+end = 3
 
 # Initialize empty list
 original_title = []
@@ -78,13 +78,6 @@ def genre_scrape():
     combine_list = list_ + [genres]
     combine_list_names = ['original_title', 'isbn', 'edition_language', 'series', 
                           'characters', 'setting', 'literary_awards', 'genres']
-
-    # Make the combine_list into 
-    series_list = []
-
-    # Append the series into the series list
-    for k in range(len(combine_list)):
-        series_list.append(pd.Series(combine_list[k], name=combine_list_names[k]))
 
 
 # Initiate the scrape

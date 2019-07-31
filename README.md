@@ -4,7 +4,7 @@ The data was gathered from the good reads website located here: https://www.good
 
 ## Natural Language Processing (NLP)
 
-- The NLP library used for this project is located here: https://spacy.io/
+The NLP library used for this project is located here: https://spacy.io/
 
 The central data structures in spaCy are the Doc and the Vocab. The Doc object owns the sequence of tokens and all their annotations. The Vocab object owns a set of look-up tables that make common information available across documents. By centralizing strings, word vectors and lexical attributes, we avoid storing multiple copies of this data. This saves memory, and ensures there’s a single source of truth.
 
